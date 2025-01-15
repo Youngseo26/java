@@ -6,25 +6,25 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Day09 {
+public class Day10 {
 
 	public static void main(String[] args) throws IOException {
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int [] arr = new int[5];
+		int sum = 0;
 		
-		int n = Integer.parseInt(br.readLine());
-		
-		int [] arr = new int [n];
-		
-		for(int i = 0; i < n; i ++) {
-			StringTokenizer st = new StringTokenizer(br.readLine(),"\n");
+		for(int i =0; i < 5; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
 			arr[i] = Integer.parseInt(st.nextToken());
+			sum+=arr[i];
 		}
 		
 		Arrays.sort(arr);
 		
-		for(int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i] + " "); 
-		}
+		int median = arr[arr.length/2];
+		int avg = sum/5;
+		
+		System.out.println(avg);
+		System.out.println(median);
 	}
 }
