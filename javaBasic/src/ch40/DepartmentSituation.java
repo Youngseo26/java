@@ -2,7 +2,7 @@ package ch40;
 
 public class DepartmentSituation {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		//전제 상황
 		int price = 10000;
 		Staff staff = new Staff();
@@ -30,6 +30,9 @@ public class DepartmentSituation {
 		}
 		
 		staff.printMySalesAmount();
+		
+		while(true) {
+			Thread.sleep(100);		}
 	}
 
 }
