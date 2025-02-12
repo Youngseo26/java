@@ -1,6 +1,14 @@
-package ch43;
+package ch58;
 
-public class Customer {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Customer implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	static int serialNum = 1;
 
 	protected String customerId;
@@ -67,6 +75,12 @@ public class Customer {
 			return customer.customerId == this.customerId;
 		}
 		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		//return 1000; //이러면 안된다 고유하지 못함
+		return Objects.hashCode(this.customerId);
 	}
 
 }
