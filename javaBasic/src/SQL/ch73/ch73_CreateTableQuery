@@ -1,0 +1,24 @@
+CREATE DATABASE ch_73;
+USE ch_73;
+
+CREATE TABLE member(
+mem_name VARCHAR(10)
+, member_number TINYINT
+, addr VARCHAR(30)
+, phone CHAR(12)
+, height TINYINT UNSIGNED   //TINYINT UNSIGNED -> (0-255)
+, enroll_date DATETIME
+);
+
+DESC member;
+
+
+CREATE TABLE netflix(
+	movie_title VARCHAR(30)
+ ,  movie_director VARCHAR(20)
+ ,  movie_star VARCHAR(20)
+ ,  movie_script LONGTEXT
+ ,  movie_film LONGBLOB
+);
+
+DESC netflix;

@@ -1,0 +1,47 @@
+CREATE DATABASE ch_74;
+USE ch_74;
+
+CREATE TABLE member(
+member_id INT AUTO_INCREMENT PRIMARY KEY,
+mem_name VARCHAR(10) NOT NULL,
+addr VARCHAR(30),
+phone CHAR(12),
+height TINYINT UNSIGNED, 
+enroll_date DATETIME
+);
+
+DESC member;
+
+CREATE TABLE netflix(
+    movie_id INT AUTO_INCREMENT PRIMARY KEY
+ ,	movie_title VARCHAR(30) NOT NULL
+ ,  movie_director VARCHAR(20) NOT NULL
+ ,  movie_star VARCHAR(20) NOT NULL
+ ,  movie_script LONGTEXT
+ ,  movie_film LONGBLOB
+);
+
+DESC netflix;
+
+-----ALTER-----
+COLUMN 추가
+
+ALTER TABLE table_name
+ADD column_name dataType;
+
+COLUMN 수정
+ALTER TABLE table_name
+MODIFY COLUMN column_name dataType;
+
+COLUMN 제거
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+
+-----TRUNCATE-----
+TRUNCATE TABLE table_name;  // 데이터만 삭제 테이블은 살아있음
+
+-----DROP-----
+DROP TABLE table_name;  // 테이블 통으로 날리기
+
+
