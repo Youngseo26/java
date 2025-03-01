@@ -1,0 +1,14 @@
+------DML------
+
+INSERT INTO member (mem_name, addr, phone, height, enroll_date)
+VALUES('영서', '서울시 서초구', '01023741490', 158, '1997-09-26');
+
+INSERT INTO member (mem_name, addr, phone, height, enroll_date)
+VALUES('명곤', '서울시 강남구', '01084522318', 178, '1997-12-17');
+
+UPDATE member
+SET addr = '서울시 광진구'
+WHERE mem_name = 'Jane';
+
+DELETE FROM member
+WHERE mem_name = 'Bob';
