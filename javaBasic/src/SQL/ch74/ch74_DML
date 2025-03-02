@@ -12,3 +12,9 @@ WHERE mem_name = 'Jane';
 
 DELETE FROM member
 WHERE mem_name = 'Bob';
+
+SELECT mem_id, prod_name FROM buy_history;
+
+SELECT *
+FROM group_singer
+WHERE mem_name = '블랙핑크';

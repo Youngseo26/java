@@ -14,7 +14,6 @@ public class Day02 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
-		//String str = br.readLine();
 		
 		int a = Integer.parseInt(br.readLine());
 		

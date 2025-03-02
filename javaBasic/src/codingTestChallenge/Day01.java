@@ -8,8 +8,8 @@ public class Day01 {
 		
 		Scanner sc = new Scanner(System.in);		
 		long a = sc.nextLong();
-		long b = sc.nextInt();
-		long c = sc.nextInt();
+		long b = sc.nextLong();
+		long c = sc.nextLong();
 		
 		System.out.println(a+b+c);
 		
