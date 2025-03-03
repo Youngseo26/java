@@ -1,4 +1,4 @@
-package codingTestChallenge;
+package codingTestChallenge.새싹반;
 
 import java.util.Scanner;
 
